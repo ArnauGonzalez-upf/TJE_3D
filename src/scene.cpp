@@ -37,31 +37,41 @@ Scene::Scene()
 	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
 	//bro->model->setScale(0.2, 0.2, 0.2);
 	entities.push_back(bro);
-	player = bro;
+	player = bro;*/
 
 	fondo = new EntityMesh();
-	fondo->texture->load("data/space/space_cubemap.tga");
+	fondo->texture->load("data/cielo/cielo.tga");
 	// example of loading Mesh from Mesh Manager
-	fondo->mesh = Mesh::Get("data/space/space_cubemap.ASE");
+	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
 	// example of shader loading using the shaders manager
 	fondo->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-	fondo->model->setScale(20, 20, 20);
-	entities.push_back(fondo);*/
+	//fondo->model->setScale(20, 20, 20);
+	//entities.push_back(fondo);
 
 	EntityMesh* house2 = new EntityMesh();
 	house2->texture->load("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 	// example of loading Mesh from Mesh Manager
-	house2->mesh = Mesh::Get("data/casa.obj");
+	house2->mesh = Mesh::Get("data/samorai5.obj");
 	// example of shader loading using the shaders manager
-	house2->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
+	house2->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 
 	EntityMesh* bro = new EntityMesh();
 	bro->texture->load("data/biglib/MiniCharacters/PolygonMinis_Texture_01_A.png");
 	// example of loading Mesh from Mesh Manager
 	bro->mesh = Mesh::Get("data/biglib/MiniCharacters/Chr_Samurai_SamuraiWarrior_01_48.obj");
 	// example of shader loading using the shaders manager
-	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
+	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 	bro->model->translate(50,0,0);
+	bro->model->scale(0.8, 0.8, 0.8);
+
+/*
+	EntityMesh* bro = new EntityMesh();
+	bro->texture->load("data/biglib/MiniCharacters/PolygonMinis_Texture_01_A.png");
+	// example of loading Mesh from Mesh Manager
+	bro->mesh = Mesh::Get("data/biglib/SamuraiPack/Props/SM_Wep_Odachi_01_9.obj");
+	// example of shader loading using the shaders manager
+	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+	bro->model->translate(50, 0, 0);*/
 
 	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 
@@ -69,6 +79,9 @@ Scene::Scene()
 	player = bro;
 
 	entities.push_back(house2);
+
+	EntityLight* sun = new EntityLight();
+	lights.push_back(sun);
 }
 
 void Scene::drawSky(Camera* camera)
@@ -128,8 +141,13 @@ void EntityMesh::render(Camera* camera)
 	//if bounding box is inside the camera frustum then the object is probably visible
 	if (camera->testBoxInFrustum(world_bounding.center, world_bounding.halfsize))
 	{
+		EntityLight* light = Game::instance->scene->lights[0];
+
 		//enable shader
 		shader->enable();
+
+		shader->setVector3("u_ambient_light", Vector3(0.3, 0.3, 0.3));
+
 
 		//upload uniforms
 		shader->setUniform("u_color", Vector4(1, 1, 1, 1));
@@ -137,6 +155,16 @@ void EntityMesh::render(Camera* camera)
 		shader->setUniform("u_texture", texture, 0);
 		shader->setUniform("u_model", model);
 		shader->setUniform("u_time", time);
+
+		shader->setVector3("u_light_vector", light->model->frontVector());
+		shader->setUniform("u_light_intensity", light->intensity);
+		shader->setVector3("u_light_color", light->color);
+		shader->setUniform("u_shadow_bias", 0.001f);
+
+		Texture* shadowmap = light->shadow_fbo->depth_texture;
+		shader->setTexture("shadowmap", shadowmap, 1);
+		Matrix44 shadow_proj = light->cam->viewprojection_matrix;
+		shader->setUniform("u_shadow_viewproj", shadow_proj);
 
 		//do the draw call
 		mesh->render(GL_TRIANGLES);
@@ -197,22 +225,23 @@ void EntityMesh::update(float dt)
 
 EntityLight::EntityLight()
 {
-	model->translate(0,1000,0);
+	model->translate(100, 100, 100);
 
-	Vector3 pos = *model * Vector3(0, 0, 0);
-	Vector3 target = Vector3(100,0,0.01);
-	model->setFrontAndOrthonormalize(pos - target);
+	entity_type = LIGHT;
+
+	Vector3 target = Vector3(0,0,0);
+	Vector3 pos = model->getTranslation();
+	model->setFrontAndOrthonormalize(target - pos);
 
 	cam = new Camera();
-	cam->lookAt(pos, pos + model->rotateVector(Vector3(0, 0, -1)), Vector3(0, 1, 0));
-	cam->setOrthographic(-1000, 1000, -1000, 1000, 1, 5000);
+	cam->lookAt(model->getTranslation(), *model * Vector3(0, 0, 1), model->rotateVector(Vector3(0, 1, 0)));
+	cam->setOrthographic(-100, 100, -100, 100, 0.1, 500);
 
-	color = Vector3(1, 1, 1);
 	light_type = DIRECTIONAL;
 
 	shadow_fbo = new FBO();
-	shadow_fbo->setDepthOnly(1024, 1024);
+	shadow_fbo->setDepthOnly(8192, 8192);
 
-	intensity = 100.0;
+	intensity = 1.0;
 	color = Vector3(1, 1, 1);
 }

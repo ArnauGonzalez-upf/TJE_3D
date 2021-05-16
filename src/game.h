@@ -58,6 +58,9 @@ public:
 	void onGamepadButtonUp(SDL_JoyButtonEvent event);
 	void onResize(int width, int height);
 
+	void shadowMapping(EntityLight* light, Camera* camera);
+	void renderMeshWithMaterialShadow(const Matrix44& model, Mesh* mesh, EntityLight* light);
+
 };
 
 

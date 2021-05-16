@@ -51,22 +51,6 @@ public:
     Vector3 getPosition() { return *model * Vector3(0, 0, 0); }
 };
 
-class EntityMesh : public Entity
-{
-public:
-    //Attributes of this class 
-    Mesh* mesh;
-    Texture* texture;
-    Shader* shader;
-    Vector4 color;
-
-    EntityMesh();
-   
-    //methods overwritten 
-    void render(Camera* camera);
-    void update(float elapsed_time);
-};
-
 class EntityLight : public Entity
 {
 public:
@@ -81,8 +65,24 @@ public:
 
     EntityLight();
     //methods overwritten 
-   // void render();
+    //void render(std::vector<EntityMesh*> entities);
     //void update(float dt);
+};
+
+class EntityMesh : public Entity
+{
+public:
+    //Attributes of this class 
+    Mesh* mesh;
+    Texture* texture;
+    Shader* shader;
+    Vector4 color;
+
+    EntityMesh();
+
+    //methods overwritten 
+    void render(Camera* camera);
+    void update(float elapsed_time);
 };
 
 class Scene
@@ -90,6 +90,7 @@ class Scene
 public:
     //static Scene* instance;
     std::vector<Entity*> entities;
+    std::vector<EntityLight*> lights;
     Entity* player;
 
     EntityMesh* fondo;

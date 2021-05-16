@@ -77,7 +77,7 @@ void Game::render(void)
 	Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
 	Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
 	Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-	camera->lookAt(eye, center, up);
+	camera->lookAt(eye, center, Vector3(0.0f, 1.0f, 0.0f));
 
 	//set flags
 	glDisable(GL_BLEND);
@@ -85,20 +85,17 @@ void Game::render(void)
 	glDisable(GL_CULL_FACE);
 
 	glDisable(GL_DEPTH_TEST);
-	//scene->drawSky(camera);
+	scene->drawSky(camera);
 	glEnable(GL_DEPTH_TEST);
+	
+	EntityLight* light = scene->lights[0];
+	shadowMapping(light, camera);
+
 
 	for (int i = 0; i < scene->entities.size(); ++i)
 	{
 		Entity* ent = scene->entities[i];
-	
-		//is an object
-		if (ent->entity_type == OBJECT)
-		{
-			EntityMesh* oent = (EntityMesh*)ent;
-			if (oent->mesh)
-				oent->render(camera);
-		}
+		ent->render(camera);
 	}
 
 
@@ -110,6 +107,54 @@ void Game::render(void)
 
 	//swap between front buffer and back buffer
 	SDL_GL_SwapWindow(this->window);
+}
+
+void Game::shadowMapping(EntityLight* light, Camera* camera)
+{
+	//Bind to render inside a texture
+	light->shadow_fbo->bind();
+	glColorMask(false, false, false, false);
+	glClear(GL_DEPTH_BUFFER_BIT);
+
+	for (int i = 0; i < scene->entities.size(); ++i)
+	{
+		EntityMesh* ent = (EntityMesh*)scene->entities[i]; 
+
+		//compute the bounding box of the object in world space (by using the mesh bounding box transformed to world space)
+		BoundingBox world_bounding = transformBoundingBox(*ent->model, ent->mesh->box);
+
+		//if bounding box is inside the camera frustum then the object is probably visible
+		if (light->cam->testBoxInFrustum(world_bounding.center, world_bounding.halfsize))
+		{
+			renderMeshWithMaterialShadow(*ent->model, ent->mesh, light);
+		}
+	}
+
+	//disable it to render back to the screen
+	light->shadow_fbo->unbind();
+	glColorMask(true, true, true, true);
+}
+
+void Game::renderMeshWithMaterialShadow(const Matrix44& model, Mesh* mesh, EntityLight* light)
+{
+	//define locals to simplify coding
+	Shader* shader = NULL;
+	shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadowmap.fs");
+	assert(glGetError() == GL_NO_ERROR);
+
+	shader->enable();
+
+	Matrix44 shadow_proj = light->cam->viewprojection_matrix;
+	shader->setUniform("u_viewprojection", shadow_proj);
+	shader->setUniform("u_model", model);
+
+	mesh->render(GL_TRIANGLES);
+
+	shader->disable();
+
+	//set the render state as it was before to avoid problems with future renders
+	glDisable(GL_BLEND);
+	glDepthFunc(GL_LESS); //as default
 }
 
 void Game::update(double seconds_elapsed)
