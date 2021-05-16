@@ -43,16 +43,6 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 	camera->lookAt(Vector3(0.f,100.f, 100.f),Vector3(0.f,0.f,0.f), Vector3(0.f,1.f,0.f)); //position the camera and point to 0,0,0
 	camera->setPerspective(70.f,window_width/(float)window_height,0.1f,10000.f); //set the projection, we want to be perspective
 
-	//load one texture without using the Texture Manager (Texture::Get would use the manager)
-	texture = new Texture();
- 	texture->load("data/terrain2/terrain.tga");
-
-	// example of loading Mesh from Mesh Manager
-	mesh = Mesh::Get("data/terrain2/terrain.ASE");
-
-	// example of shader loading using the shaders manager
-	shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-
 	//hide the cursor
 	SDL_ShowCursor(!mouse_locked); //hide or show the mouse
 
@@ -77,7 +67,7 @@ void Game::render(void)
 	camera->enable();
 
 	//cosa = false;
-	if (cosa)
+	/*if (cosa)
 	{
 		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
 		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
@@ -90,7 +80,7 @@ void Game::render(void)
 		Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
 		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
 		camera->lookAt(eye, center , up);
-	}
+	}*/
 
 	//set flags
 	glDisable(GL_BLEND);
@@ -98,7 +88,7 @@ void Game::render(void)
 	glDisable(GL_CULL_FACE);
 
 	glDisable(GL_DEPTH_TEST);
-	scene->drawSky(camera);
+	//scene->drawSky(camera);
 	glEnable(GL_DEPTH_TEST);
 	
 	EntityLight* light = scene->lights[0];
@@ -136,7 +126,7 @@ void Game::shadowMapping(EntityLight* light, Camera* camera)
 		BoundingBox world_bounding = transformBoundingBox(*ent->model, ent->mesh->box);
 
 		//if bounding box is inside the camera frustum then the object is probably visible
-		if (light->cam->testBoxInFrustum(world_bounding.center, world_bounding.halfsize) && ent->name != "muros")
+		if (light->cam->testBoxInFrustum(world_bounding.center, world_bounding.halfsize) && ent->name != "MUROS")
 		{
 			renderMeshWithMaterialShadow(*ent->model, ent->mesh, light);
 		}

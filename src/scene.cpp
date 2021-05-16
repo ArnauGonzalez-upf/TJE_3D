@@ -12,34 +12,7 @@ Scene::Scene()
 {
 	//instance = this;
 
-	/*EntityMesh* nave = new EntityMesh();
-	nave->texture->load("data/terrain/tree.tga");
-	// example of loading Mesh from Mesh Manager
-	nave->mesh = Mesh::Get("data/terrain/terrain_trees.ASE");
-	// example of shader loading using the shaders manager
-	nave->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-
-	EntityMesh* terrain = new EntityMesh();
-	terrain->texture->load("data/terrain2/terrain.tga");
-	// example of loading Mesh from Mesh Manager
-	terrain->mesh = Mesh::Get("data/terrain2/terrain.ASE");
-	// example of shader loading using the shaders manager
-	terrain->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-
-	entities.push_back(nave);
-	entities.push_back(terrain);
-
-	EntityMesh* bro = new EntityMesh();
-	bro->texture->load("data/nave/x3_fighter.tga");
-	// example of loading Mesh from Mesh Manager
-	bro->mesh = Mesh::Get("data/nave/x3_fighter.ASE");
-	// example of shader loading using the shaders manager
-	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-	//bro->model->setScale(0.2, 0.2, 0.2);
-	entities.push_back(bro);
-	player = bro;*/
-
-	fondo = new EntityMesh("fondo");
+	/*fondo = new EntityMesh("fondo");
 	fondo->texture->load("data/cielo/cielo.tga");
 	// example of loading Mesh from Mesh Manager
 	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
@@ -47,6 +20,12 @@ Scene::Scene()
 	fondo->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
 	//fondo->model->setScale(20, 20, 20);
 	//entities.push_back(fondo);
+
+	fondo->texture->load("data/cielo/cielo.tga");
+	// example of loading Mesh from Mesh Manager
+	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
+	 example of shader loading using the shaders manager
+	fondo->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
 
 	EntityMesh* plano = new EntityMesh("plano");
 	plano->texture->load("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
@@ -58,7 +37,7 @@ Scene::Scene()
 	EntityMesh* muros = new EntityMesh("muros");
 	muros->texture->load("data/biglib/GiantGeneralPack/color-atlas-new.png");
 	// example of loading Mesh from Mesh Manager
-	muros->mesh = Mesh::Get("data/muros6.obj");
+	muros->mesh = Mesh::Get("data/muros.obj");
 	// example of shader loading using the shaders manager
 	muros->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 
@@ -69,28 +48,62 @@ Scene::Scene()
 	// example of shader loading using the shaders manager
 	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 	bro->model->translate(50,0,0);
-	bro->model->scale(0.8, 0.8, 0.8);
-	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
+	//bro->model->scale(0.8, 0.8, 0.8);
+	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));*/
 
-/*
-	EntityMesh* bro = new EntityMesh();
-	bro->texture->load("data/biglib/MiniCharacters/PolygonMinis_Texture_01_A.png");
-	// example of loading Mesh from Mesh Manager
-	bro->mesh = Mesh::Get("data/biglib/SamuraiPack/Props/SM_Wep_Odachi_01_9.obj");
-	// example of shader loading using the shaders manager
-	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
-	bro->model->translate(50, 0, 0);*/
-
-	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
-
-	entities.push_back(bro);
-	player = bro;
-
-	entities.push_back(plano);
-	entities.push_back(muros);
+	//entities.push_back(bro);
+	//player = bro;
 
 	EntityLight* sun = new EntityLight("sol");
 	lights.push_back(sun);
+
+	TextParser* parser = new TextParser("data/escena_prueba.txt");
+
+	while (!parser->eof())
+	{
+		std::string type = parser->getword();
+		if (type == "NAME")
+		{
+			std::string name = parser->getword();
+			std::cout << name << std::endl;
+			EntityMesh* new_ent = new EntityMesh(name);
+			entities.push_back(new_ent);
+			if (name == "BRO")
+				player = new_ent;
+			if (name == "FONDO") 
+				fondo = new_ent;
+		}
+		if (type == "MESH")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			char* cosa = parser->getword();
+			ent->mesh = Mesh::Get(cosa);
+
+		}
+		if (type == "TEXTURE")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			ent->texture = Texture::Get(parser->getword());
+
+		}
+		if (type == "SHADER")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			ent->shader = Shader::Get("data/shaders/basic.vs", parser->getword());
+		}
+		if (type == "POSITION")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			int x = parser->getint();
+			int y = parser->getint();
+			int z = parser->getint();
+			ent->model->setTranslation(x, y, z);
+
+		}
+	}
+
+	std::cout << entities.size() << std::endl;
+
 }
 
 void Scene::drawSky(Camera* camera)

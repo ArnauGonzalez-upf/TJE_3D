@@ -10,31 +10,32 @@ Converted to C++ in 1.7.98 to use it in the Rayman project.
 
 class TextParser
 {
-  char *data;
-  unsigned int sl;
-  unsigned int size;
 public:
-  TextParser();
-  TextParser(const char*);
-  ~TextParser();
-  
-  bool create(const char *);
-  char *getword();
-  char *getcommaword();
-  int getint();
-  double getfloat();
-  
-  int countword(char *);
-  int countwordfromhere(char *);
-  int countchar(char);
-  void reset();
-  void destroy();
-  void goback();
-  void seek(const char *);
-  int eof();
+	char* data;
+	unsigned int sl;
+	unsigned int size;
 
-  // Funcions afegides.
-  int CountObjs();
+	  TextParser();
+	  TextParser(const char*);
+	  ~TextParser();
+  
+	  bool create(const char *);
+	  char *getword();
+	  char *getcommaword();
+	  int getint();
+	  double getfloat();
+  
+	  int countword(char *);
+	  int countwordfromhere(char *);
+	  int countchar(char);
+	  void reset();
+	  void destroy();
+	  void goback();
+	  void seek(const char *);
+	  int eof();
+
+	  // Funcions afegides.
+	  int CountObjs();
 };
 
 #endif

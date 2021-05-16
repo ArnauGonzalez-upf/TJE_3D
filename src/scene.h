@@ -5,6 +5,7 @@
 #include "texture.h"
 #include "fbo.h"
 #include "camera.h"
+#include "extra\textparser.h"
 
 enum eLightType {
     SPOT = 1,

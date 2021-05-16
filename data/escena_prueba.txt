@@ -1,0 +1,20 @@
+NAME fondo
+MESH data/cielo/cielo.ASE
+TEXTURE data/cielo/cielo.tga
+SHADER data/shaders/texture.fs
+
+NAME plano
+MESH data/plano.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+
+NAME muros
+MESH data/muros.obj
+TEXTURE data/biglib/GiantGeneralPack/color-atlas-new.png
+SHADER data/shaders/texture.fs
+
+NAME bro
+MESH data/biglib/SamuraiPack/Characters/Character_Samurai_Warrior_Black_5.obj
+TEXTURE data/biglib/GiantGeneralPack/color-atlas-new.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION 50 0 0
