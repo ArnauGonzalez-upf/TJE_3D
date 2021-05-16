@@ -33,6 +33,8 @@ public:
 	int fps;
 	bool must_exit;
 
+	bool cosa;
+
 	Scene* scene;
 	eRenderMode render_mode = DEFAULT;
 
@@ -61,6 +63,7 @@ public:
 	void shadowMapping(EntityLight* light, Camera* camera);
 	void renderMeshWithMaterialShadow(const Matrix44& model, Mesh* mesh, EntityLight* light);
 
+	void AddObjectInFront();
 };
 
 

@@ -63,7 +63,7 @@ public:
     Camera* cam;
     FBO* shadow_fbo;
 
-    EntityLight();
+    EntityLight(std::string name);
     //methods overwritten 
     //void render(std::vector<EntityMesh*> entities);
     //void update(float dt);
@@ -78,7 +78,7 @@ public:
     Shader* shader;
     Vector4 color;
 
-    EntityMesh();
+    EntityMesh(std::string name);
 
     //methods overwritten 
     void render(Camera* camera);

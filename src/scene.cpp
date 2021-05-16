@@ -39,7 +39,7 @@ Scene::Scene()
 	entities.push_back(bro);
 	player = bro;*/
 
-	fondo = new EntityMesh();
+	fondo = new EntityMesh("fondo");
 	fondo->texture->load("data/cielo/cielo.tga");
 	// example of loading Mesh from Mesh Manager
 	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
@@ -48,21 +48,29 @@ Scene::Scene()
 	//fondo->model->setScale(20, 20, 20);
 	//entities.push_back(fondo);
 
-	EntityMesh* house2 = new EntityMesh();
-	house2->texture->load("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+	EntityMesh* plano = new EntityMesh("plano");
+	plano->texture->load("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 	// example of loading Mesh from Mesh Manager
-	house2->mesh = Mesh::Get("data/samorai5.obj");
+	plano->mesh = Mesh::Get("data/plano.obj");
 	// example of shader loading using the shaders manager
-	house2->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+	plano->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 
-	EntityMesh* bro = new EntityMesh();
-	bro->texture->load("data/biglib/MiniCharacters/PolygonMinis_Texture_01_A.png");
+	EntityMesh* muros = new EntityMesh("muros");
+	muros->texture->load("data/biglib/GiantGeneralPack/color-atlas-new.png");
 	// example of loading Mesh from Mesh Manager
-	bro->mesh = Mesh::Get("data/biglib/MiniCharacters/Chr_Samurai_SamuraiWarrior_01_48.obj");
+	muros->mesh = Mesh::Get("data/muros6.obj");
+	// example of shader loading using the shaders manager
+	muros->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+
+	EntityMesh* bro = new EntityMesh("bro");
+	bro->texture->load("data/biglib/GiantGeneralPack/color-atlas-new.png");
+	// example of loading Mesh from Mesh Manager
+	bro->mesh = Mesh::Get("data/biglib/SamuraiPack/Characters/Character_Samurai_Warrior_Black_5.obj");
 	// example of shader loading using the shaders manager
 	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 	bro->model->translate(50,0,0);
 	bro->model->scale(0.8, 0.8, 0.8);
+	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 
 /*
 	EntityMesh* bro = new EntityMesh();
@@ -78,9 +86,10 @@ Scene::Scene()
 	entities.push_back(bro);
 	player = bro;
 
-	entities.push_back(house2);
+	entities.push_back(plano);
+	entities.push_back(muros);
 
-	EntityLight* sun = new EntityLight();
+	EntityLight* sun = new EntityLight("sol");
 	lights.push_back(sun);
 }
 
@@ -107,7 +116,7 @@ void Scene::drawSky(Camera* camera)
 
 Entity::Entity()
 {
-	name = "a";
+	//this->name = name;
 	model = new Matrix44();
 
 	parent = NULL;
@@ -123,8 +132,9 @@ Matrix44 Entity::getGlobalMatrix()
 	return *model; //otherwise just return my model as global
 }
 
-EntityMesh::EntityMesh()
+EntityMesh::EntityMesh(std::string name)
 {
+	this->name = name;
 	mesh = NULL;
 	texture = new Texture();
 	shader = NULL;
@@ -133,6 +143,10 @@ EntityMesh::EntityMesh()
 
 void EntityMesh::render(Camera* camera)
 {
+	if (!Game::instance->cosa) {
+		if (this == Game::instance->scene->player) { return; }
+	}
+
 	Matrix44 model = getGlobalMatrix();
 
 	//compute the bounding box of the object in world space (by using the mesh bounding box transformed to world space)
@@ -194,6 +208,7 @@ void EntityMesh::update(float dt)
 		Vector3 col_normal;     //temp var para guardar la normal al punto de colision
 		float max_ray_dist = 20;*/
 
+		if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT)) model->translate(0.0f, 0.0f, 1.0f * 15 * dt); //move faster with left shift
 		if (Input::isKeyPressed(SDL_SCANCODE_W)) model->translate(0.0f, 0.0f, 1.0f * 10 * dt);
 		if (Input::isKeyPressed(SDL_SCANCODE_S)) model->translate(0.0f, 0.0f, -1.0f * 10 * dt);
 		if (Input::isKeyPressed(SDL_SCANCODE_D)) model->rotate(90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
@@ -223,8 +238,9 @@ void EntityMesh::update(float dt)
 	}
 }
 
-EntityLight::EntityLight()
+EntityLight::EntityLight(std::string name)
 {
+	this->name = name;
 	model->translate(100, 100, 100);
 
 	entity_type = LIGHT;

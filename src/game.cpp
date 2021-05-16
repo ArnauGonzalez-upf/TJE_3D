@@ -60,6 +60,8 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 
 	//fbo_shadow = new FBO();
 	//fbo_shadow->setDepthOnly(2048, 2048);
+
+	cosa = false;
 }
 
 //what to do when the image has to be draw
@@ -74,10 +76,21 @@ void Game::render(void)
 	//set the camera as default
 	camera->enable();
 
-	Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
-	Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
-	Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-	camera->lookAt(eye, center, Vector3(0.0f, 1.0f, 0.0f));
+	//cosa = false;
+	if (cosa)
+	{
+		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
+		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
+		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+		camera->lookAt(eye, center, up);
+	}
+	else
+	{
+		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+		Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
+		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+		camera->lookAt(eye, center , up);
+	}
 
 	//set flags
 	glDisable(GL_BLEND);
@@ -97,7 +110,6 @@ void Game::render(void)
 		Entity* ent = scene->entities[i];
 		ent->render(camera);
 	}
-
 
 	//Draw the floor grid
 	//drawGrid();
@@ -124,7 +136,7 @@ void Game::shadowMapping(EntityLight* light, Camera* camera)
 		BoundingBox world_bounding = transformBoundingBox(*ent->model, ent->mesh->box);
 
 		//if bounding box is inside the camera frustum then the object is probably visible
-		if (light->cam->testBoxInFrustum(world_bounding.center, world_bounding.halfsize))
+		if (light->cam->testBoxInFrustum(world_bounding.center, world_bounding.halfsize) && ent->name != "muros")
 		{
 			renderMeshWithMaterialShadow(*ent->model, ent->mesh, light);
 		}
@@ -157,6 +169,35 @@ void Game::renderMeshWithMaterialShadow(const Matrix44& model, Mesh* mesh, Entit
 	glDepthFunc(GL_LESS); //as default
 }
 
+void Game::AddObjectInFront()
+{
+	Vector3 origin = camera->eye;
+	Vector3 dir = camera->getRayDirection(Input::mouse_position.x, Input::mouse_position.y, window_width, window_height);
+	Vector3 pos = RayPlaneCollision(Vector3(), Vector3(0, 1, 0), origin, dir);
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_1))
+	{
+		EntityMesh* entity = new EntityMesh("casa");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/casa.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_2))
+	{
+		EntityMesh* entity = new EntityMesh("arbol");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+}
+
 void Game::update(double seconds_elapsed)
 {
 	float speed = seconds_elapsed * mouse_speed; //the speed is defined by the seconds_elapsed so it goes constant
@@ -172,11 +213,13 @@ void Game::update(double seconds_elapsed)
 	}
 
 	//async input to move the camera around
-	if(Input::isKeyPressed(SDL_SCANCODE_LSHIFT) ) speed *= 10; //move faster with left shift
-	//if (Input::isKeyPressed(SDL_SCANCODE_W) || Input::isKeyPressed(SDL_SCANCODE_UP)) camera->move(Vector3(0.0f, 0.0f, 1.0f) * speed);
-	//if (Input::isKeyPressed(SDL_SCANCODE_S) || Input::isKeyPressed(SDL_SCANCODE_DOWN)) camera->move(Vector3(0.0f, 0.0f,-1.0f) * speed);
-	//if (Input::isKeyPressed(SDL_SCANCODE_A) || Input::isKeyPressed(SDL_SCANCODE_LEFT)) camera->move(Vector3(1.0f, 0.0f, 0.0f) * speed);
-	//if (Input::isKeyPressed(SDL_SCANCODE_D) || Input::isKeyPressed(SDL_SCANCODE_RIGHT)) camera->move(Vector3(-1.0f,0.0f, 0.0f) * speed);
+	if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT) ) speed *= 10; //move faster with left shift
+	if (Input::wasKeyPressed(SDL_SCANCODE_SPACE)) { cosa = true; } //move faster with left shift
+	if (Input::wasKeyPressed(SDL_SCANCODE_V)) { cosa = false; } //move faster with left shift
+	if (Input::isKeyPressed(SDL_SCANCODE_UP)) camera->move(Vector3(0.0f, 0.0f, 1.0f) * speed);
+	if (Input::isKeyPressed(SDL_SCANCODE_DOWN)) camera->move(Vector3(0.0f, 0.0f,-1.0f) * speed);
+	if (Input::isKeyPressed(SDL_SCANCODE_LEFT)) camera->move(Vector3(1.0f, 0.0f, 0.0f) * speed);
+	if (Input::isKeyPressed(SDL_SCANCODE_RIGHT)) camera->move(Vector3(-1.0f,0.0f, 0.0f) * speed);
 
 	//to navigate with the mouse fixed in the middle
 	if (mouse_locked)
@@ -194,6 +237,8 @@ void Game::update(double seconds_elapsed)
 				oent->update(seconds_elapsed);
 		}
 	}
+
+	AddObjectInFront();
 }
 
 //Keyboard event handler (sync input)

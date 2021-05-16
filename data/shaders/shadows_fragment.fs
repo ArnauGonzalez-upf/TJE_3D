@@ -39,8 +39,7 @@ float shadow_fact(vec4 v_lightspace_position)
 	real_depth = real_depth * 0.5 + 0.5;
 
 	if( shadow_uv.x < 0.0 || shadow_uv.x > 1.0 || shadow_uv.y < 0.0 || shadow_uv.y > 1.0 ){
-      		if (u_light_type == 2) {return 1.0;}
-		else {return 0.0;}
+ 		return 1.0;
 	}
 	
 	bool u_pcf = true;

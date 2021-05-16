@@ -1,0 +1,3511 @@
+# Blender MTL File: 'None'
+# Material Count: 319
+
+newmtl PolygonSamurai_Mat_01.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.008
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.009
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.010
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.011
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.012
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.013
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.014
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.015
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.016
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.017
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.018
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.019
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.020
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.021
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.022
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.023
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.024
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.025
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.026
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.027
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.028
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.029
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.030
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.031
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.032
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.033
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.034
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.035
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.036
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.037
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.038
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.039
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.040
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.041
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.042
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.043
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.044
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.045
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.046
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.047
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.048
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.049
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.050
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.051
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.052
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.053
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.054
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.055
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.056
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.057
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.058
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.059
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.060
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.061
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.062
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.063
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.064
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.065
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.066
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.067
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.068
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.069
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.070
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.071
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.080
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.081
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.082
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.083
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.084
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.085
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.086
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.088
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.089
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.090
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.091
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.092
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.093
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.094
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.095
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.096
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.097
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.101
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.102
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.103
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.104
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.105
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.109
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.110
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.111
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.113
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.114
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.115
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.116
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.117
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.118
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.119
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.120
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.121
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.122
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.123
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.124
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.125
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.126
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.127
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.128
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.129
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.130
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.131
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.132
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.133
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.134
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.135
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.136
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.137
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.138
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.139
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.140
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.141
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.142
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.143
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.144
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.145
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.146
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.147
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.148
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.149
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.150
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.151
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.152
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.153
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.154
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.155
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.156
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.157
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.158
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.159
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.160
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.161
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.162
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.163
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.164
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.165
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.166
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.167
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.168
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.169
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.170
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.171
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.172
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.173
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.174
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.175
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.176
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.177
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.178
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.179
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.180
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.181
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.182
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.183
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.184
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.185
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.186
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.187
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.188
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.189
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.190
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.191
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.192
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.193
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.194
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.195
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.196
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.197
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.198
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.199
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.200
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.201
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.202
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.203
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.204
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.205
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.206
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.207
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.208
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.209
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.210
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.211
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.212
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.213
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.214
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.215
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.216
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.217
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.218
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.219
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.220
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.221
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.222
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.223
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.224
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.225
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.226
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.227
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.228
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.229
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.230
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.231
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.232
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.233
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.234
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.235
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.236
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.237
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.238
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.239
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.240
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.241
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.242
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.243
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.244
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.245
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.246
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.247
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.248
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.249
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.250
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.251
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.252
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.253
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.254
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.255
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.256
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.257
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.258
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.259
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.260
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.261
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.262
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.263
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.264
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.265
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.271
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.272
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.273
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.274
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.275
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.276
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.277
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.278
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.279
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.280
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.281
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.282
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.283
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.284
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.285
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.286
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.287
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.288
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.289
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.290
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.291
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.292
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.293
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.294
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.295
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.296
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.297
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.298
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.299
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.300
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.301
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.302
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.303
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.304
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.305
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.306
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.307
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.308
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.309
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.310
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.311
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.312
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.313
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.314
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.315
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.316
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.317
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.318
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.319
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.320
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.321
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.322
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.323
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.324
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.325
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.326
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.327
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.328
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.329
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.330
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.331
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.332
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.333
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.334
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.335
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.336
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.337
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.338
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.339
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.340
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.341
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.342
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.343
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.344
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.345
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.346
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Assets\\PolygonSamurai\\Textures\\PolygonSamurai_Tex_01.png
