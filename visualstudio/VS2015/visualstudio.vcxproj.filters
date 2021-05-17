@@ -65,6 +65,7 @@
     <ClCompile Include="..\..\src\rendercall.cpp">
       <Filter>gfx</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\stage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\camera.h" />
@@ -127,6 +128,7 @@
     <ClInclude Include="..\..\src\rendercall.h">
       <Filter>gfx</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\stage.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="extra">

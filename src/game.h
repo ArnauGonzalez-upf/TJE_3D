@@ -9,6 +9,7 @@
 #include "camera.h"
 #include "utils.h"
 #include "scene.h"
+#include "stage.h"
 
 enum eRenderMode {
 	DEFAULT,
@@ -20,6 +21,9 @@ class Game
 public:
 
 	static Game* instance;
+	//Stage* current;
+
+	bool edit_mode;
 
 	//window
 	SDL_Window* window;

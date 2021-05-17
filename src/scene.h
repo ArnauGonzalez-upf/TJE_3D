@@ -98,4 +98,5 @@ public:
 
     Scene();
     void drawSky(Camera* camera);
+    void exportEscene();
 };

@@ -1,0 +1,105 @@
+NAME FONDO
+MESH DATA/CIELO/CIELO.ASE
+TEXTURE DATA/CIELO/CIELO.TGA
+SHADER DATA/SHADERS/TEXTURE.FS
+POSITION 0.000000 0.000000 0.000000
+NAME PLANO
+MESH DATA/PLANO.OBJ
+TEXTURE DATA/BIGLIB/SAMURAIPACK/POLYGONSAMURAI_TEX_01.PNG
+SHADER DATA/SHADERS/SHADOWS_FRAGMENT.FS
+POSITION 0.000000 0.000000 0.000000
+NAME MUROS
+MESH DATA/MUROS.OBJ
+TEXTURE DATA/BIGLIB/GIANTGENERALPACK/COLOR-ATLAS-NEW.PNG
+SHADER DATA/SHADERS/TEXTURE.FS
+POSITION 0.000000 0.000000 0.000000
+NAME BRO
+MESH DATA/BIGLIB/SAMURAIPACK/CHARACTERS/CHARACTER_SAMURAI_WARRIOR_BLACK_5.OBJ
+TEXTURE DATA/BIGLIB/GIANTGENERALPACK/COLOR-ATLAS-NEW.PNG
+SHADER DATA/SHADERS/SHADOWS_FRAGMENT.FS
+POSITION 50.000000 0.000000 0.000000
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -98.864349 0.000000 29.692368
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -98.809799 0.000000 21.395777
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -98.571396 0.000000 12.801825
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -98.577057 0.000000 4.085769
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -93.166267 0.000000 37.851318
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -83.327934 0.000001 39.642147
+NAME casa
+MESH data/casa.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -74.250725 0.000000 33.778152
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -69.850571 0.000000 39.338982
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -72.704941 0.000000 46.724731
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -86.755432 0.000000 45.907352
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -87.157379 0.000000 52.514862
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -68.076538 0.000000 53.655819
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -99.709518 0.000002 42.718922
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -100.829239 0.000002 53.002270
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -103.621292 0.000000 29.199501
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -104.195389 0.000000 18.146551
+NAME arbol
+MESH data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj
+TEXTURE data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png
+SHADER data/shaders/shadows_fragment.fs
+POSITION -104.113770 0.000002 9.532615

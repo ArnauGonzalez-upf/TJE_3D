@@ -28,6 +28,7 @@ class Shader
 
 public:
 	static Shader* current;
+	std::string ps_filename;
 
 	Shader();
 	virtual ~Shader();
@@ -124,7 +125,6 @@ protected:
 
 	std::string info_log;
 	std::string vs_filename;
-	std::string ps_filename;
 	std::string macros;
 	bool from_atlas;
 

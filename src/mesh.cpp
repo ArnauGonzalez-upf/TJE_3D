@@ -1548,11 +1548,11 @@ Mesh* Mesh::Get(const char* filename)
 		return it->second;
 
 	Mesh* m = new Mesh();
-	std::string name = filename;
+	m->name = filename;
 
 	//detect format
 	char file_format = 0;
-	std::string ext = name.substr(name.find_last_of(".")+1);
+	std::string ext = m->name.substr(m->name.find_last_of(".")+1);
 	if (ext == "ase" || ext == "ASE")
 		file_format = FORMAT_ASE;
 	else if (ext == "obj" || ext == "OBJ")
@@ -1633,7 +1633,7 @@ Mesh* Mesh::Get(const char* filename)
 		std::cout << "[OK]" << std::endl;
 	}
 
-	m->registerMesh(name);
+	m->registerMesh(m->name);
 	return m;
 }
 

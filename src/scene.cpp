@@ -7,6 +7,8 @@
 #include "shader.h"
 #include "input.h"
 #include "animation.h"
+#include <iostream>
+#include <fstream>
 
 Scene::Scene()
 {
@@ -57,7 +59,7 @@ Scene::Scene()
 	EntityLight* sun = new EntityLight("sol");
 	lights.push_back(sun);
 
-	TextParser* parser = new TextParser("data/escena_prueba.txt");
+	TextParser* parser = new TextParser("data/pueblo.txt");
 
 	while (!parser->eof())
 	{
@@ -76,9 +78,7 @@ Scene::Scene()
 		if (type == "MESH")
 		{
 			EntityMesh* ent = (EntityMesh*)entities.back();
-			char* cosa = parser->getword();
-			ent->mesh = Mesh::Get(cosa);
-
+			ent->mesh = Mesh::Get(parser->getword());
 		}
 		if (type == "TEXTURE")
 		{
@@ -94,11 +94,10 @@ Scene::Scene()
 		if (type == "POSITION")
 		{
 			EntityMesh* ent = (EntityMesh*)entities.back();
-			int x = parser->getint();
-			int y = parser->getint();
-			int z = parser->getint();
+			int x = parser->getfloat();
+			int y = parser->getfloat();
+			int z = parser->getfloat();
 			ent->model->setTranslation(x, y, z);
-
 		}
 	}
 
@@ -125,6 +124,28 @@ void Scene::drawSky(Camera* camera)
 
 	//disable shader
 	fondo->shader->disable();
+}
+
+void Scene::exportEscene()
+{
+	std::ofstream myfile;
+	myfile.open("data/pueblo.txt");
+	for (int i = 0; i < entities.size(); ++i)
+	{
+		EntityMesh* ent = (EntityMesh*)entities[i];
+
+		myfile << "NAME " + ent->name + "\n";
+		myfile << "MESH " + ent->mesh->name + "\n";
+		myfile << "TEXTURE " + ent->texture->filename + "\n";
+		myfile << "SHADER " + ent->shader->ps_filename + "\n";
+		
+		Vector3 pos = ent->model->getTranslation();
+		if (i == entities.size() - 1) { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z); }
+		else { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z) + "\n"; }
+
+	}
+	myfile.close();
+	std::cout << "Scene exported!" << std::endl;
 }
 
 Entity::Entity()
@@ -258,7 +279,7 @@ EntityLight::EntityLight(std::string name)
 
 	entity_type = LIGHT;
 
-	Vector3 target = Vector3(0,0,0);
+	Vector3 target = Vector3(0,0,60);
 	Vector3 pos = model->getTranslation();
 	model->setFrontAndOrthonormalize(target - pos);
 

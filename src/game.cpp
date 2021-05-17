@@ -52,6 +52,10 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 	//fbo_shadow->setDepthOnly(2048, 2048);
 
 	cosa = false;
+
+	new EditorStage();
+
+	edit_mode = true;
 }
 
 //what to do when the image has to be draw
@@ -67,19 +71,22 @@ void Game::render(void)
 	camera->enable();
 
 	//cosa = false;
-	if (cosa)
+	if (!edit_mode)
 	{
-		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
-		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
-		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-		camera->lookAt(eye, center, up);
-	}
-	else
-	{
-		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
-		Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
-		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-		camera->lookAt(eye, center , up);
+		if (cosa)
+		{
+			Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
+			Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
+			Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+			camera->lookAt(eye, center, up);
+		}
+		else
+		{
+			Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+			Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
+			Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+			camera->lookAt(eye, center, up);
+		}
 	}
 
 	//set flags
@@ -186,49 +193,77 @@ void Game::AddObjectInFront()
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
 		scene->entities.push_back(entity);
 	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_3))
+	{
+		EntityMesh* entity = new EntityMesh("arbol");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
 }
 
 void Game::update(double seconds_elapsed)
 {
-	float speed = seconds_elapsed * mouse_speed; //the speed is defined by the seconds_elapsed so it goes constant
+	if (Input::wasKeyPressed(SDL_SCANCODE_E)) { edit_mode = (edit_mode + 1) % 2; } //move faster with left shift
+	if (Input::wasKeyPressed(SDL_SCANCODE_SPACE)) { cosa = (cosa + 1) % 2; } //move faster with left shift
 
-	//example
-	angle += (float)seconds_elapsed * 10.0f;
-
-	//mouse input to rotate the cam
-	if ((Input::mouse_state & SDL_BUTTON_LEFT) || mouse_locked ) //is left button pressed?
+	if (edit_mode)
 	{
-		camera->rotate(Input::mouse_delta.x * 0.005f, Vector3(0.0f,-1.0f,0.0f));
-		camera->rotate(Input::mouse_delta.y * 0.005f, camera->getLocalVector( Vector3(-1.0f,0.0f,0.0f)));
-	}
+		float speed = seconds_elapsed * mouse_speed; //the speed is defined by the seconds_elapsed so it goes constant
 
-	//async input to move the camera around
-	if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT) ) speed *= 10; //move faster with left shift
-	if (Input::wasKeyPressed(SDL_SCANCODE_SPACE)) { cosa = true; } //move faster with left shift
-	if (Input::wasKeyPressed(SDL_SCANCODE_V)) { cosa = false; } //move faster with left shift
-	if (Input::isKeyPressed(SDL_SCANCODE_UP)) camera->move(Vector3(0.0f, 0.0f, 1.0f) * speed);
-	if (Input::isKeyPressed(SDL_SCANCODE_DOWN)) camera->move(Vector3(0.0f, 0.0f,-1.0f) * speed);
-	if (Input::isKeyPressed(SDL_SCANCODE_LEFT)) camera->move(Vector3(1.0f, 0.0f, 0.0f) * speed);
-	if (Input::isKeyPressed(SDL_SCANCODE_RIGHT)) camera->move(Vector3(-1.0f,0.0f, 0.0f) * speed);
+		//example
+		angle += (float)seconds_elapsed * 10.0f;
 
-	//to navigate with the mouse fixed in the middle
-	if (mouse_locked)
-		Input::centerMouse();
-
-	for (int i = 0; i < scene->entities.size(); ++i)
-	{
-		Entity* ent = scene->entities[i];
-
-		//is an object
-		if (ent->entity_type == OBJECT)
+		//mouse input to rotate the cam
+		if ((Input::mouse_state & SDL_BUTTON_LEFT) || mouse_locked) //is left button pressed?
 		{
-			EntityMesh* oent = (EntityMesh*)ent;
-			if (oent->mesh)
-				oent->update(seconds_elapsed);
+			camera->rotate(Input::mouse_delta.x * 0.005f, Vector3(0.0f, -1.0f, 0.0f));
+			camera->rotate(Input::mouse_delta.y * 0.005f, camera->getLocalVector(Vector3(-1.0f, 0.0f, 0.0f)));
+		}
+
+		//async input to move the camera around
+		if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT)) speed *= 10; //move faster with left shift
+		if (Input::isKeyPressed(SDL_SCANCODE_W)) camera->move(Vector3(0.0f, 0.0f, 1.0f) * speed);
+		if (Input::isKeyPressed(SDL_SCANCODE_S)) camera->move(Vector3(0.0f, 0.0f, -1.0f) * speed);
+		if (Input::isKeyPressed(SDL_SCANCODE_A)) camera->move(Vector3(1.0f, 0.0f, 0.0f) * speed);
+		if (Input::isKeyPressed(SDL_SCANCODE_D)) camera->move(Vector3(-1.0f, 0.0f, 0.0f) * speed);
+
+		EntityMesh* ent = (EntityMesh*)scene->entities.back();
+		if (Input::isKeyPressed(SDL_SCANCODE_UP)) ent->model->translate(0.0f, 0.0f, 1.0f * 10 * seconds_elapsed);
+		if (Input::isKeyPressed(SDL_SCANCODE_DOWN)) ent->model->translate(0.0f, 0.0f, -1.0f * 10 * seconds_elapsed);
+		if (Input::isKeyPressed(SDL_SCANCODE_RIGHT)) ent->model->translate(1.0f * 10 * seconds_elapsed, 0.0f, 0.0f);
+		if (Input::isKeyPressed(SDL_SCANCODE_LEFT)) ent->model->translate(-1.0f * 10 * seconds_elapsed, 0.0f, 0.0f);
+
+		if (Input::isKeyPressed(SDL_SCANCODE_Z)) ent->model->rotate(90.0f * seconds_elapsed * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
+		if (Input::isKeyPressed(SDL_SCANCODE_X)) ent->model->rotate(-90.0f * seconds_elapsed * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
+
+		if (Input::wasKeyPressed(SDL_SCANCODE_BACKSPACE))scene->entities.pop_back();
+		if (Input::wasKeyPressed(SDL_SCANCODE_KP_ENTER)) scene->exportEscene();
+
+		//to navigate with the mouse fixed in the middle
+		if (mouse_locked)
+			Input::centerMouse();
+
+		AddObjectInFront();
+	}
+	else {
+		for (int i = 0; i < scene->entities.size(); ++i)
+		{
+			Entity* ent = scene->entities[i];
+
+			//is an object
+			if (ent->entity_type == OBJECT)
+			{
+				EntityMesh* oent = (EntityMesh*)ent;
+				if (oent->mesh)
+					oent->update(seconds_elapsed);
+			}
 		}
 	}
-
-	AddObjectInFront();
 }
 
 //Keyboard event handler (sync input)
