@@ -67,7 +67,7 @@ void Game::render(void)
 	camera->enable();
 
 	//cosa = false;
-	/*if (cosa)
+	if (cosa)
 	{
 		Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
 		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
@@ -80,7 +80,7 @@ void Game::render(void)
 		Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
 		Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
 		camera->lookAt(eye, center , up);
-	}*/
+	}
 
 	//set flags
 	glDisable(GL_BLEND);
