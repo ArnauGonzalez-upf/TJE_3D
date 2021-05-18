@@ -196,9 +196,75 @@ void Game::AddObjectInFront()
 
 	if (Input::wasKeyPressed(SDL_SCANCODE_3))
 	{
-		EntityMesh* entity = new EntityMesh("arbol");
+		EntityMesh* entity = new EntityMesh("camino recto");
 		entity->model->setTranslation(pos.x, pos.y, pos.z);
-		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Tree_04_74.obj");
+		entity->mesh = Mesh::Get("data/caminardo.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_4))
+	{
+		EntityMesh* entity = new EntityMesh("camino esquina");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Path_Corner_01_31.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_5))
+	{
+		EntityMesh* entity = new EntityMesh("camino 4");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Path_4Way_01_43.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_6))
+	{
+		EntityMesh* entity = new EntityMesh("tulipanes");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Tulips_02_2.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_7))
+	{
+		EntityMesh* entity = new EntityMesh("arco");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Archway_01_23.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_8))
+	{
+		EntityMesh* entity = new EntityMesh("cubo 1");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Prop_Bucket_01_37.obj");
+
+		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		scene->entities.push_back(entity);
+	}
+
+	if (Input::wasKeyPressed(SDL_SCANCODE_9))
+	{
+		EntityMesh* entity = new EntityMesh("cubo 2");
+		entity->model->setTranslation(pos.x, pos.y, pos.z);
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Prop_Bucket_02_17.obj");
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");

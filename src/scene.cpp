@@ -91,13 +91,22 @@ Scene::Scene()
 			EntityMesh* ent = (EntityMesh*)entities.back();
 			ent->shader = Shader::Get("data/shaders/basic.vs", parser->getword());
 		}
+		if (type == "FRONT")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			std::cout << x << std::endl;
+			ent->model->setFrontAndOrthonormalize(Vector3(x, y, z));
+		}
 		if (type == "POSITION")
 		{
 			EntityMesh* ent = (EntityMesh*)entities.back();
-			int x = parser->getfloat();
-			int y = parser->getfloat();
-			int z = parser->getfloat();
-			ent->model->setTranslation(x, y, z);
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			ent->model->translate(x, y, z);
 		}
 	}
 
@@ -139,9 +148,13 @@ void Scene::exportEscene()
 		myfile << "TEXTURE " + ent->texture->filename + "\n";
 		myfile << "SHADER " + ent->shader->ps_filename + "\n";
 		
+		Vector3 front = ent->model->frontVector();
+		myfile << "FRONT " + std::to_string(front.x) + " " + std::to_string(front.y) + " " + std::to_string(front.z) + "\n";
+
 		Vector3 pos = ent->model->getTranslation();
 		if (i == entities.size() - 1) { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z); }
 		else { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z) + "\n"; }
+
 
 	}
 	myfile.close();
