@@ -139,7 +139,7 @@ void Game::render(void)
 
 void Game::shadowMapping(EntityLight* light, Camera* camera)
 {
-	Vector3 pos = scene->player->getPosition() - (light->model->rotateVector(Vector3(0, 0, 1)) * 20);
+	Vector3 pos = scene->player->getPosition() - (light->model->rotateVector(Vector3(0, 0, 1)) * 25);
 	light->cam->lookAt(pos, pos + light->model->rotateVector(Vector3(0, 0, 1)), light->model->rotateVector(Vector3(0, 1, 0)));
 
 	//Bind to render inside a texture
