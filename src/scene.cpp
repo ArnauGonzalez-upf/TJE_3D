@@ -205,7 +205,7 @@ void EntityMesh::update(float dt)
 		if (Input::isKeyPressed(SDL_SCANCODE_D)) model->rotate(90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 		if (Input::isKeyPressed(SDL_SCANCODE_A)) model->rotate(-90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 
-		Vector3 characterTargetCenter = model->getTranslation() + Vector3(0, 2, 0);
+		Vector3 characterTargetCenter = model->getTranslation() + Vector3(0, 1.5, 0);
 		for (int i = 0; i < Game::instance->scene->entities.size() - 1; ++i)
 		{
 			EntityMesh* current = (EntityMesh*)Game::instance->scene->entities[i];
@@ -237,7 +237,7 @@ EntityLight::EntityLight(std::string name)
 
 	cam = new Camera();
 	cam->lookAt(model->getTranslation(), *model * Vector3(0, 0, 1), model->rotateVector(Vector3(0, 1, 0)));
-	cam->setOrthographic(-100, 100, -100, 100, 0.1, 500);
+	cam->setOrthographic(-50, 50, -50, 50, 0.1, 500);
 
 	light_type = DIRECTIONAL;
 
