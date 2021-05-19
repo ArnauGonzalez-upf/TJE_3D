@@ -10,12 +10,12 @@
 #include <iostream>
 #include <fstream>
 
-Scene::Scene()
+Scene::Scene(const char* filename)
 {
 	EntityLight* sun = new EntityLight("sol");
 	lights.push_back(sun);
 
-	TextParser* parser = new TextParser("data/pueblo.txt");
+	TextParser* parser = new TextParser(filename);
 
 	while (!parser->eof())
 	{
@@ -65,9 +65,6 @@ Scene::Scene()
 			ent->model->translate(x, y, z);
 		}
 	}
-
-	std::cout << entities.size() << std::endl;
-
 }
 
 void Scene::drawSky(Camera* camera)
@@ -141,6 +138,7 @@ EntityMesh::EntityMesh(std::string name)
 	texture = new Texture();
 	shader = NULL;
 	entity_type = OBJECT;
+	object = false;
 }
 
 void EntityMesh::render(Camera* camera)
@@ -191,10 +189,15 @@ void EntityMesh::render(Camera* camera)
 		for (int i = 0; i < children.size(); i++)
 			children[i]->render(camera);  //repeat for every child	
 	}
+
+	if (object)
+		drawText(350, 200, "open door", Vector3(1, 1, 1), 5);
 }
 
 void EntityMesh::update(float dt)
 {   
+	bool change_stage = false;
+
 	if (this == Game::instance->scene->player)
 	{
 		Vector3 last_pos = model->getTranslation();
@@ -212,6 +215,30 @@ void EntityMesh::update(float dt)
 
 			Vector3 coll;
 			Vector3 collnorm;
+
+			if (current->name == "PUERTA_BAR")
+			{
+				if (current->mesh->testRayCollision(*current->model,     //the model of the entity to know where it is
+					characterTargetCenter,        //the origin of the ray we want to test
+					model->frontVector(),        //the dir vector of the ray
+					coll,        //here we will h
+					collnorm,        //a temp var to store the collision normal
+					5,    //max ray distance to test
+					false            //false if we want the col_point in world space (true if in object)
+				) == true)
+				{
+					object = true;
+					if (Input::wasKeyPressed(SDL_SCANCODE_F))
+						change_stage = true;
+				}
+				else { object = false; }
+			}
+
+			/*if (current->name == "PUERTA_BAR" && current->mesh->testSphereCollision(*current->model, characterTargetCenter, 3, coll, collnorm))
+			{
+				object = true;
+			}*/
+
 			if (!current->mesh->testSphereCollision(*current->model, characterTargetCenter, 0.5, coll, collnorm))
 				continue;
 
@@ -222,6 +249,9 @@ void EntityMesh::update(float dt)
 			model->setFrontAndOrthonormalize(front);
 		}
 	}
+
+	if (change_stage)
+		Game::instance->scene = new Scene("data/combate.txt");
 }
 
 EntityLight::EntityLight(std::string name)

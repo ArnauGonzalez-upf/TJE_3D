@@ -79,6 +79,8 @@ public:
     Shader* shader;
     Vector4 color;
 
+    bool object;
+
     EntityMesh(std::string name);
 
     //methods overwritten 
@@ -96,7 +98,7 @@ public:
 
     EntityMesh* fondo;
 
-    Scene();
+    Scene(const char* filename);
     void drawSky(Camera* camera);
     void exportEscene();
 };

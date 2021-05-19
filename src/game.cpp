@@ -46,7 +46,7 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 	//hide the cursor
 	SDL_ShowCursor(!mouse_locked); //hide or show the mouse
 
-	scene = new Scene();
+	scene = new Scene("data/pueblo.txt");
 
 	//fbo_shadow = new FBO();
 	//fbo_shadow->setDepthOnly(2048, 2048);
