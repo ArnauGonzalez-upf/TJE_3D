@@ -12,50 +12,6 @@
 
 Scene::Scene()
 {
-	//instance = this;
-
-	/*fondo = new EntityMesh("fondo");
-	fondo->texture->load("data/cielo/cielo.tga");
-	// example of loading Mesh from Mesh Manager
-	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
-	// example of shader loading using the shaders manager
-	fondo->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-	//fondo->model->setScale(20, 20, 20);
-	//entities.push_back(fondo);
-
-	fondo->texture->load("data/cielo/cielo.tga");
-	// example of loading Mesh from Mesh Manager
-	fondo->mesh = Mesh::Get("data/cielo/cielo.ASE");
-	 example of shader loading using the shaders manager
-	fondo->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/texture.fs");
-
-	EntityMesh* plano = new EntityMesh("plano");
-	plano->texture->load("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
-	// example of loading Mesh from Mesh Manager
-	plano->mesh = Mesh::Get("data/plano.obj");
-	// example of shader loading using the shaders manager
-	plano->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
-
-	EntityMesh* muros = new EntityMesh("muros");
-	muros->texture->load("data/biglib/GiantGeneralPack/color-atlas-new.png");
-	// example of loading Mesh from Mesh Manager
-	muros->mesh = Mesh::Get("data/muros.obj");
-	// example of shader loading using the shaders manager
-	muros->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
-
-	EntityMesh* bro = new EntityMesh("bro");
-	bro->texture->load("data/biglib/GiantGeneralPack/color-atlas-new.png");
-	// example of loading Mesh from Mesh Manager
-	bro->mesh = Mesh::Get("data/biglib/SamuraiPack/Characters/Character_Samurai_Warrior_Black_5.obj");
-	// example of shader loading using the shaders manager
-	bro->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
-	bro->model->translate(50,0,0);
-	//bro->model->scale(0.8, 0.8, 0.8);
-	//bro->model->rotate(90.0f * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));*/
-
-	//entities.push_back(bro);
-	//player = bro;
-
 	EntityLight* sun = new EntityLight("sol");
 	lights.push_back(sun);
 
@@ -138,7 +94,7 @@ void Scene::drawSky(Camera* camera)
 void Scene::exportEscene()
 {
 	std::ofstream myfile;
-	myfile.open("data/pueblo.txt");
+	myfile.open("data/combate.txt");
 	for (int i = 0; i < entities.size(); ++i)
 	{
 		EntityMesh* ent = (EntityMesh*)entities[i];
@@ -147,14 +103,13 @@ void Scene::exportEscene()
 		myfile << "MESH " + ent->mesh->name + "\n";
 		myfile << "TEXTURE " + ent->texture->filename + "\n";
 		myfile << "SHADER " + ent->shader->ps_filename + "\n";
-		
-		Vector3 front = ent->model->frontVector();
-		myfile << "FRONT " + std::to_string(front.x) + " " + std::to_string(front.y) + " " + std::to_string(front.z) + "\n";
 
 		Vector3 pos = ent->model->getTranslation();
-		if (i == entities.size() - 1) { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z); }
-		else { myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z) + "\n"; }
+		myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z) + "\n";
 
+		Vector3 front = ent->model->frontVector();
+		if (i == entities.size() - 1) { myfile << "FRONT " + std::to_string(front.x) + " " + std::to_string(front.y) + " " + std::to_string(front.z); }
+		else { myfile << "FRONT " + std::to_string(front.x) + " " + std::to_string(front.y) + " " + std::to_string(front.z) + "\n"; }
 
 	}
 	myfile.close();
@@ -163,7 +118,7 @@ void Scene::exportEscene()
 
 Entity::Entity()
 {
-	//this->name = name;
+	//this->name = name; 
 	model = new Matrix44();
 
 	parent = NULL;
@@ -242,18 +197,7 @@ void EntityMesh::update(float dt)
 {   
 	if (this == Game::instance->scene->player)
 	{
-		//if (Input::isKeyPressed(SDL_SCANCODE_W)) model->translate(0.0f, 0.0f, -1.0f * 10 * dt);
-		
-		//if (Input::isKeyPressed(SDL_SCANCODE_D)) model->rotate(90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
-		//if (Input::isKeyPressed(SDL_SCANCODE_A)) model->rotate(-90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
-
-		//model->translate(0.0f, 0.0f, -1.0f * 20 * dt);
-
-		/*Vector3 last_pos = model->getTranslation();
-
-		Vector3 col_point;     //temp var para guardar el punto de colision si lo hay
-		Vector3 col_normal;     //temp var para guardar la normal al punto de colision
-		float max_ray_dist = 20;*/
+		Vector3 last_pos = model->getTranslation();
 
 		if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT)) model->translate(0.0f, 0.0f, 1.0f * 15 * dt); //move faster with left shift
 		if (Input::isKeyPressed(SDL_SCANCODE_W)) model->translate(0.0f, 0.0f, 1.0f * 10 * dt);
@@ -261,27 +205,22 @@ void EntityMesh::update(float dt)
 		if (Input::isKeyPressed(SDL_SCANCODE_D)) model->rotate(90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 		if (Input::isKeyPressed(SDL_SCANCODE_A)) model->rotate(-90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 
-		/*for (int i = 0; i < Game::instance->scene->entities.size(); ++i) {
-			Matrix44 m = *(Game::instance->scene->entities[i]->model);
-			EntityMesh* ent = (EntityMesh*)Game::instance->scene->entities[i];
-			Mesh* mesh = ent->mesh;
-			//max_ray_dist = model->getTranslation().distance(last_pos);
+		Vector3 characterTargetCenter = model->getTranslation() + Vector3(0, 2, 0);
+		for (int i = 0; i < Game::instance->scene->entities.size() - 1; ++i)
+		{
+			EntityMesh* current = (EntityMesh*)Game::instance->scene->entities[i];
 
-			if (Game::instance->scene->entities[i] != Game::instance->scene->player) {
-				//la funcion testRayCollision construye el CollisionModel3D si no ha sido creado antes y luego testea el rayo
-				if (mesh->testRayCollision(m,     //the model of the entity to know where it is
-					last_pos,        //the origin of the ray we want to test
-					model->frontVector(),        //the dir vector of the ray
-					col_point,        //here we will h
-					col_normal,        //a temp var to store the collision normal
-					max_ray_dist,    //max ray distance to test
-					false            //false if we want the col_point in world space (true if in object)
-				) == true)
-				{
-					model->translate(0.0f, 0.0f, -1.0f * 10 * dt);
-				}
-			}
-		}*/
+			Vector3 coll;
+			Vector3 collnorm;
+			if (!current->mesh->testSphereCollision(*current->model, characterTargetCenter, 0.5, coll, collnorm))
+				continue;
+
+			Vector3 push_away = normalize(coll - characterTargetCenter) * 10 * dt;
+
+			Vector3 front = model->frontVector();
+			model->setTranslation(last_pos.x - push_away.x, 0, last_pos.z - push_away.z);
+			model->setFrontAndOrthonormalize(front);
+		}
 	}
 }
 

@@ -16,6 +16,18 @@ enum eRenderMode {
 	SHADOW
 };
 
+enum eSwordPositions : int {
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT
+};
+
+enum eCombatMode {
+	ATTACK,
+	DEFENSE
+};
+
 class Game
 {
 public:
@@ -24,6 +36,13 @@ public:
 	//Stage* current;
 
 	bool edit_mode;
+	bool combat_mode;
+
+	float combat_counter;
+	bool attack_change;
+	eSwordPositions attack;
+	eSwordPositions defense;
+	eCombatMode comb_m;
 
 	//window
 	SDL_Window* window;

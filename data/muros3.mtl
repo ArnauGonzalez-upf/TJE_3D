@@ -1,0 +1,57 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl LOW-POLY-COLORS
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.004
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl PolygonSamurai_Mat_01.008
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
