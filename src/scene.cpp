@@ -229,7 +229,10 @@ void EntityMesh::update(float dt)
 				{
 					object = true;
 					if (Input::wasKeyPressed(SDL_SCANCODE_F))
+					{
 						change_stage = true;
+						Game::instance->camera_mode = false;
+					}
 				}
 				else { object = false; }
 			}
@@ -251,7 +254,7 @@ void EntityMesh::update(float dt)
 	}
 
 	if (change_stage)
-		Game::instance->scene = new Scene("data/combate.txt");
+		Game::instance->scene = new Scene("data/bar.txt");
 }
 
 EntityLight::EntityLight(std::string name)

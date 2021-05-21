@@ -37,6 +37,7 @@ public:
 
 	bool edit_mode;
 	bool combat_mode;
+	bool camera_mode;
 
 	float combat_counter;
 	bool attack_change;

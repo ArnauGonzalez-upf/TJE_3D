@@ -61,6 +61,7 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 	comb_m = DEFENSE;
 	combat_counter = 4;
 	attack_change = true;
+	camera_mode = true;
 }
 
 //what to do when the image has to be draw
@@ -79,19 +80,26 @@ void Game::render(void)
 	if (!edit_mode)
 	{
 		if (!combat_mode) {
-			if (cosa)
-			{
-				Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
-				Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
-				Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-				camera->lookAt(eye, center, up);
+			if (camera_mode) {
+				if (cosa)
+				{
+					Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
+					Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
+					Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+					camera->lookAt(eye, center, up);
+				}
+				else
+				{
+					Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+					Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
+					Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+					camera->lookAt(eye, center, up);
+				}
 			}
-			else
-			{
-				Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
-				Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
-				Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
-				camera->lookAt(eye, center, up);
+			else {
+				Vector3 eye = Vector3(15.0f, 5.0f, 0.0f);
+				Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+				camera->lookAt(eye, center, camera->up);
 			}
 		}
 		else {
