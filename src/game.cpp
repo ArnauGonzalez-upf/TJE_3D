@@ -283,9 +283,9 @@ void Game::update(double seconds_elapsed)
 		}
 	}
 	else {
-		for (int i = 0; i < scene->entities.size(); ++i)
+		for (int i = 0; i < scene->dynamic_entities.size(); ++i)
 		{
-			Entity* ent = scene->entities[i];
+			Entity* ent = scene->dynamic_entities[i];
 
 			//is an object
 			if (ent->entity_type == OBJECT)
@@ -363,6 +363,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -374,6 +375,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -385,17 +387,20 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
 	if (Input::wasKeyPressed(SDL_SCANCODE_4))
 	{
-		EntityMesh* entity = new EntityMesh("camino esquina");
+		EntityMesh* entity = new EntityMesh("Village man");
 		entity->model->setTranslation(pos.x, pos.y, pos.z);
-		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Path_Corner_01_31.obj");
+		//entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Environment/SM_Env_Path_Corner_01_31.obj");
+		entity->mesh = Mesh::Get("data/biglib/SamuraiPack/Characters/Character_Village_Man_Black_7.obj");
 
-		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
+		entity->texture = Texture::Get("data/biglib/GiantGeneralPack/color-atlas-new.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = DYNAMIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -407,6 +412,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -418,6 +424,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -429,6 +436,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -440,6 +448,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -451,6 +460,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -462,6 +472,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -473,6 +484,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -484,6 +496,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -495,6 +508,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -506,6 +520,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -517,6 +532,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -528,6 +544,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -539,6 +556,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -550,6 +568,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -561,6 +580,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -572,6 +592,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -583,6 +604,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -594,6 +616,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -605,6 +628,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/SamuraiPack/PolygonSamurai_Tex_01.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -616,6 +640,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/GiantGeneralPack/color-atlas-new.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 
@@ -627,6 +652,7 @@ void Game::AddObjectInFront()
 
 		entity->texture = Texture::Get("data/biglib/GiantGeneralPack/color-atlas-new.png");
 		entity->shader = Shader::Get("data/shaders/basic.vs", "data/shaders/shadows_fragment.fs");
+		entity->type = STATIC;
 		scene->entities.push_back(entity);
 	}
 }

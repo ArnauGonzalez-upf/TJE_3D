@@ -21,6 +21,11 @@ enum eEntityType {
     DECALL = 5
 };
 
+enum eObjectType {
+    STATIC,
+    DYNAMIC
+};
+
 class Entity
 {
 public:
@@ -78,6 +83,7 @@ public:
     Texture* texture;
     Shader* shader;
     Vector4 color;
+    eObjectType type;
 
     bool object;
 
@@ -94,6 +100,10 @@ public:
     //static Scene* instance;
     std::vector<Entity*> entities;
     std::vector<EntityLight*> lights;
+
+    std::vector<Entity*> static_entities;
+    std::vector<Entity*> dynamic_entities;
+
     Entity* player;
 
     EntityMesh* fondo;

@@ -47,6 +47,13 @@ Scene::Scene(const char* filename)
 			EntityMesh* ent = (EntityMesh*)entities.back();
 			ent->shader = Shader::Get("data/shaders/basic.vs", parser->getword());
 		}
+		if (type == "TYPE")
+		{
+			EntityMesh* ent = (EntityMesh*)entities.back();
+			std::string tipo = parser->getword();
+			if (tipo == "STATIC") { ent->type = STATIC; static_entities.push_back(ent); }
+			else { ent->type = DYNAMIC; dynamic_entities.push_back(ent); }
+		}
 		if (type == "FRONT")
 		{
 			EntityMesh* ent = (EntityMesh*)entities.back();
@@ -91,7 +98,9 @@ void Scene::drawSky(Camera* camera)
 void Scene::exportEscene()
 {
 	std::ofstream myfile;
-	myfile.open("data/combate.txt");
+
+	myfile.open("data/bar.txt"); //CAMBIA AL ARCHIVO QUE ESTES EDITANDO
+
 	for (int i = 0; i < entities.size(); ++i)
 	{
 		EntityMesh* ent = (EntityMesh*)entities[i];
@@ -100,6 +109,9 @@ void Scene::exportEscene()
 		myfile << "MESH " + ent->mesh->name + "\n";
 		myfile << "TEXTURE " + ent->texture->filename + "\n";
 		myfile << "SHADER " + ent->shader->ps_filename + "\n";
+
+		if (ent->type == STATIC) { myfile << "TYPE STATIC\n"; }
+		else { myfile << "TYPE DYNAMIC\n"; }
 
 		Vector3 pos = ent->model->getTranslation();
 		myfile << "POSITION " + std::to_string(pos.x) + " " + std::to_string(pos.y) + " " + std::to_string(pos.z) + "\n";
@@ -162,7 +174,6 @@ void EntityMesh::render(Camera* camera)
 
 		shader->setVector3("u_ambient_light", Vector3(0.3, 0.3, 0.3));
 
-
 		//upload uniforms
 		shader->setUniform("u_color", Vector4(1, 1, 1, 1));
 		shader->setUniform("u_viewprojection", camera->viewprojection_matrix);
@@ -195,62 +206,62 @@ void EntityMesh::render(Camera* camera)
 }
 
 void EntityMesh::update(float dt)
-{   
+{
 	bool change_stage = false;
+	Vector3 last_pos = model->getTranslation();
 
 	if (this == Game::instance->scene->player)
 	{
-		Vector3 last_pos = model->getTranslation();
-
 		if (Input::isKeyPressed(SDL_SCANCODE_LSHIFT)) model->translate(0.0f, 0.0f, 1.0f * 15 * dt); //move faster with left shift
 		if (Input::isKeyPressed(SDL_SCANCODE_W)) model->translate(0.0f, 0.0f, 1.0f * 10 * dt);
 		if (Input::isKeyPressed(SDL_SCANCODE_S)) model->translate(0.0f, 0.0f, -1.0f * 10 * dt);
 		if (Input::isKeyPressed(SDL_SCANCODE_D)) model->rotate(90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
 		if (Input::isKeyPressed(SDL_SCANCODE_A)) model->rotate(-90.0f * dt * DEG2RAD, Vector3(0.0f, 1.0f, 0.0f));
+	}
+	//else
+	//{	updateNPC_IA();
+	//}
 
-		Vector3 characterTargetCenter = model->getTranslation() + Vector3(0, 1.5, 0);
-		for (int i = 0; i < Game::instance->scene->entities.size() - 1; ++i)
+	Vector3 characterTargetCenter = model->getTranslation() + Vector3(0, 1.5, 0);
+	for (int i = 0; i < Game::instance->scene->entities.size(); ++i)
+	{
+		EntityMesh* current = (EntityMesh*)Game::instance->scene->entities[i];
+
+		if (this == current)
+			continue;
+
+		Vector3 coll;
+		Vector3 collnorm;
+
+		if (current->name == "PUERTA_BAR")
 		{
-			EntityMesh* current = (EntityMesh*)Game::instance->scene->entities[i];
-
-			Vector3 coll;
-			Vector3 collnorm;
-
-			if (current->name == "PUERTA_BAR")
-			{
-				if (current->mesh->testRayCollision(*current->model,     //the model of the entity to know where it is
-					characterTargetCenter,        //the origin of the ray we want to test
-					model->frontVector(),        //the dir vector of the ray
-					coll,        //here we will h
-					collnorm,        //a temp var to store the collision normal
-					5,    //max ray distance to test
-					false            //false if we want the col_point in world space (true if in object)
-				) == true)
-				{
-					object = true;
-					if (Input::wasKeyPressed(SDL_SCANCODE_F))
-					{
-						change_stage = true;
-						Game::instance->camera_mode = false;
-					}
-				}
-				else { object = false; }
-			}
-
-			/*if (current->name == "PUERTA_BAR" && current->mesh->testSphereCollision(*current->model, characterTargetCenter, 3, coll, collnorm))
+			if (current->mesh->testRayCollision(*current->model,     //the model of the entity to know where it is
+				characterTargetCenter,        //the origin of the ray we want to test
+				model->frontVector(),        //the dir vector of the ray
+				coll,        //here we will h
+				collnorm,        //a temp var to store the collision normal
+				5,    //max ray distance to test
+				false            //false if we want the col_point in world space (true if in object)
+			) == true)
 			{
 				object = true;
-			}*/
-
-			if (!current->mesh->testSphereCollision(*current->model, characterTargetCenter, 0.5, coll, collnorm))
-				continue;
-
-			Vector3 push_away = normalize(coll - characterTargetCenter) * 10 * dt;
-
-			Vector3 front = model->frontVector();
-			model->setTranslation(last_pos.x - push_away.x, 0, last_pos.z - push_away.z);
-			model->setFrontAndOrthonormalize(front);
+				if (Input::wasKeyPressed(SDL_SCANCODE_F))
+				{
+					change_stage = true;
+					Game::instance->camera_mode = false;
+				}
+			}
+			else { object = false; }
 		}
+
+		if (!current->mesh->testSphereCollision(*current->model, characterTargetCenter, 0.5, coll, collnorm))
+			continue;
+
+		Vector3 push_away = normalize(coll - characterTargetCenter) * 10 * dt;
+
+		Vector3 front = model->frontVector();
+		model->setTranslation(last_pos.x - push_away.x, 0, last_pos.z - push_away.z);
+		model->setFrontAndOrthonormalize(front);
 	}
 
 	if (change_stage)
