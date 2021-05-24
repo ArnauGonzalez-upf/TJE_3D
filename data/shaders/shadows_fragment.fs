@@ -15,8 +15,9 @@ uniform vec3 u_light_position;
 uniform vec3 u_light_vector;
 uniform vec3 u_light_color;
 
-uniform float u_light_cutoff;
 uniform int u_light_type;
+
+uniform float u_light_cutoff;
 uniform float u_light_maxdist;
 uniform float u_light_intensity;
 
@@ -89,21 +90,54 @@ void main()
 	vec3 L;
 	
 	light += u_ambient_light;
-
-	//depending on the light type...
-	vec4 v_lightspace_position = u_shadow_viewproj * vec4(v_world_position, 1.0);			
-	L = normalize(-u_light_vector);
+	
+	if (u_light_type == 2)
+	{
+		//depending on the light type...
+		vec4 v_lightspace_position = u_shadow_viewproj * vec4(v_world_position, 1.0);			
+		L = normalize(-u_light_vector);
 		
-	//compute how much is aligned
-	float NdotL = dot(N,L);
+		//compute how much is aligned
+		float NdotL = dot(N,L);
 
-	//light cannot be negative (but the dot product can)
-	NdotL = clamp( NdotL, 0.0, 1.0 );
+		//light cannot be negative (but the dot product can)
+		NdotL = clamp( NdotL, 0.0, 1.0 );
 
-	float shadow_factor = shadow_fact(v_lightspace_position);
+		float shadow_factor = shadow_fact(v_lightspace_position);
 
-	//store the amount of diffuse light
-	light += u_light_intensity * (NdotL * u_light_color) * shadow_factor;
+		//store the amount of diffuse light
+		light += u_light_intensity * (NdotL * u_light_color) * shadow_factor;
+	}
+	else
+	{	
+		//Defining the light vector
+		L = u_light_position - v_world_position;
+
+		//Compute distance and define the attenuation factor
+		float light_distance = length( L );
+		float att_factor;
+
+		//compute a linear attenuation factor
+		att_factor = u_light_maxdist - light_distance;
+
+		//normalize factor
+		att_factor /= u_light_maxdist;
+
+		//ignore negative values
+		att_factor = max( att_factor, 0.0 );
+
+		//Normalizing L for the point and spot light dot products
+		L = normalize(L);
+
+		//compute how much is aligned
+		float NdotL = dot(N,L);
+
+		//light cannot be negative (but the dot product can)
+		NdotL = clamp( NdotL, 0.0, 1.0 );
+
+		//store the amount of diffuse light
+		light += u_light_intensity * (NdotL * u_light_color) * att_factor;
+	}
 
 	color.xyz *= light;
 

@@ -7,8 +7,13 @@
 #include "camera.h"
 #include "extra\textparser.h"
 
-enum eLightType {
-    SPOT = 1,
+enum eReadingType {
+    ENT_OBJ = 1,
+    LIGHT_OBJ = 2
+};
+
+enum eLightType : uint8 {
+    POINT_LIGHT = 1,
     DIRECTIONAL = 2
 };
 
@@ -24,6 +29,13 @@ enum eEntityType {
 enum eObjectType {
     STATIC,
     DYNAMIC
+};
+
+enum eCameraMode {
+    STATIC_CAM,
+    FOLLOWING,
+    FOLLOWING_LATERAL,
+    CENTERED
 };
 
 class Entity
@@ -105,10 +117,20 @@ public:
     std::vector<Entity*> dynamic_entities;
 
     Entity* player;
+    Vector3 player_pos_orig;
+    Vector3 player_front_orig;
 
     EntityMesh* fondo;
+
+    Camera* scene_camera;
+    eCameraMode camera_mode;
 
     Scene(const char* filename);
     void drawSky(Camera* camera);
     void exportEscene();
+
+    //manager of images
+    static std::map<const char*, Scene*> s_loaded_scenes;
+    static Scene* Get(const char* filename);
+    void registerAs(const char* filename);
 };

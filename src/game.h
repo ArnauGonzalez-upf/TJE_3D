@@ -28,6 +28,13 @@ enum eCombatMode {
 	DEFENSE
 };
 
+/*enum eCameraMode {
+	STATIC_CAM,
+	FOLLOWING,
+	FOLLOWING_LATERAL,
+	CENTERED
+};*/
+
 class Game
 {
 public:
@@ -37,7 +44,7 @@ public:
 
 	bool edit_mode;
 	bool combat_mode;
-	bool camera_mode;
+	eCameraMode camera_mode;
 
 	float combat_counter;
 	bool attack_change;

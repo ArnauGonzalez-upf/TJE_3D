@@ -10,12 +10,32 @@
 #include <iostream>
 #include <fstream>
 
+std::map<const char*, Scene*> Scene::s_loaded_scenes;
+void Scene::registerAs(const char* filename)
+{
+	//this->name = name;
+	s_loaded_scenes[filename] = this;
+}
+
+Scene* Scene::Get(const char* filename)
+{
+	auto it = s_loaded_scenes.find(filename);
+	if (it != s_loaded_scenes.end())
+		return it->second;
+	Scene* scene = new Scene(filename);
+	scene->registerAs(filename);
+	return scene;
+}
+
 Scene::Scene(const char* filename)
 {
-	EntityLight* sun = new EntityLight("sol");
-	lights.push_back(sun);
+	//EntityLight* sun = new EntityLight("sol");
+	//lights.push_back(sun);
 
 	TextParser* parser = new TextParser(filename);
+
+	scene_camera = new Camera();
+	scene_camera->setPerspective(70.f, Game::instance->window_width / (float)Game::instance->window_height, 0.1f, 10000.f); //set the projection, we want to be perspective
 
 	while (!parser->eof())
 	{
@@ -71,7 +91,94 @@ Scene::Scene(const char* filename)
 			float z = parser->getfloat();
 			ent->model->translate(x, y, z);
 		}
+		if (type == "LIGHT_NAME")
+		{
+			std::string name = parser->getword();
+			EntityLight* new_ent = new EntityLight(name);
+			new_ent->entity_type = LIGHT;
+			lights.push_back(new_ent);
+		}
+		if (type == "LIGHT_TYPE")
+		{
+			std::string tipo = parser->getword();
+			if (tipo == "DIRECTIONAL")
+			{
+				EntityLight* light = (EntityLight*)lights.back();
+				light->light_type = DIRECTIONAL;
+
+				light->model->translate(100, 100, 100);
+
+				Vector3 target = Vector3(0, 0, 60);
+				Vector3 pos = light->model->getTranslation();
+				light->model->setFrontAndOrthonormalize(target - pos);
+
+				light->cam->lookAt(light->model->getTranslation(), *light->model * Vector3(0, 0, 1), light->model->rotateVector(Vector3(0, 1, 0)));
+				light->cam->setOrthographic(-50, 50, -50, 50, 0.1, 500);
+
+				light->shadow_fbo = new FBO();
+				light->shadow_fbo->setDepthOnly(8192, 8192);
+
+				light->intensity = 1.0;
+				light->color = Vector3(1, 1, 1);
+			}
+			if (tipo == "POINT")
+			{
+				EntityLight* light = (EntityLight*)lights.back();
+				light->light_type = POINT_LIGHT;
+			}
+		}
+		if (type == "LIGHT_POS")
+		{
+			EntityLight* light = (EntityLight*)lights.back();
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			light->model->translate(x, y, z);
+		}
+		if (type == "LIGHT_INT")
+		{
+			float intensity = parser->getfloat();
+			EntityLight* light = (EntityLight*)lights.back();
+			light->intensity = intensity;
+		}
+		if (type == "LIGHT_COLOR")
+		{
+			EntityLight* light = (EntityLight*)lights.back();
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			light->color = Vector3(x, y, z);
+		}
+		if (type == "CAMERA_MODE")
+		{
+			std::string tipo = parser->getword();
+			if (tipo == "STATIC_CAM")
+				camera_mode = STATIC_CAM;
+			if (tipo == "FOLLOWING")
+				camera_mode = FOLLOWING;
+			if (tipo == "CENTERED")
+				camera_mode = CENTERED;
+			if (tipo == "FOLLOWING_LATERAL")
+				camera_mode = FOLLOWING_LATERAL;
+		}
+		if (type == "CAMERA_POS")
+		{
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			scene_camera->eye = Vector3(x, y, z);
+		}
+		if (type == "CAMERA_TARGET")
+		{
+			float x = parser->getfloat();
+			float y = parser->getfloat();
+			float z = parser->getfloat();
+			scene_camera->lookAt(scene_camera->eye, Vector3(x,y,z), scene_camera->up);
+		}
 	}
+
+	player_pos_orig = player->getPosition();
+	player_front_orig = player->model->frontVector();
 }
 
 void Scene::drawSky(Camera* camera)
@@ -99,7 +206,7 @@ void Scene::exportEscene()
 {
 	std::ofstream myfile;
 
-	myfile.open("data/bar.txt"); //CAMBIA AL ARCHIVO QUE ESTES EDITANDO
+	//myfile.open("data/casa.txt"); //CAMBIA AL ARCHIVO QUE ESTES EDITANDO
 
 	for (int i = 0; i < entities.size(); ++i)
 	{
@@ -167,8 +274,8 @@ void EntityMesh::render(Camera* camera)
 	//if bounding box is inside the camera frustum then the object is probably visible
 	if (camera->testBoxInFrustum(world_bounding.center, world_bounding.halfsize))
 	{
-		EntityLight* light = Game::instance->scene->lights[0];
-
+		glDepthFunc(GL_LEQUAL);
+		glBlendFunc(GL_ONE, GL_ONE);
 		//enable shader
 		shader->enable();
 
@@ -181,21 +288,40 @@ void EntityMesh::render(Camera* camera)
 		shader->setUniform("u_model", model);
 		shader->setUniform("u_time", time);
 
-		shader->setVector3("u_light_vector", light->model->frontVector());
-		shader->setUniform("u_light_intensity", light->intensity);
-		shader->setVector3("u_light_color", light->color);
-		shader->setUniform("u_shadow_bias", 0.001f);
+		for (int i = 0; i < Game::instance->scene->lights.size(); ++i)
+		{
+			EntityLight* light = Game::instance->scene->lights[i];
 
-		Texture* shadowmap = light->shadow_fbo->depth_texture;
-		shader->setTexture("shadowmap", shadowmap, 1);
-		Matrix44 shadow_proj = light->cam->viewprojection_matrix;
-		shader->setUniform("u_shadow_viewproj", shadow_proj);
+			if (i != 0)
+			{
+				glEnable(GL_BLEND);
+				shader->setVector3("u_ambient_light", Vector3(0, 0, 0));
+			}
 
-		//do the draw call
-		mesh->render(GL_TRIANGLES);
+			shader->setVector3("u_light_vector", light->model->frontVector());
+			shader->setUniform("u_light_intensity", light->intensity);
+			shader->setUniform("u_light_position", light->getPosition());
+			shader->setVector3("u_light_color", light->color);
+			shader->setUniform("u_shadow_bias", 0.001f);
+			shader->setUniform("u_light_type", (int)light->light_type);
+			shader->setUniform("u_light_maxdist", 15.0f);
 
+			if (light->light_type == DIRECTIONAL)
+			{
+				Texture* shadowmap = light->shadow_fbo->depth_texture;
+				shader->setTexture("shadowmap", shadowmap, 1);
+				Matrix44 shadow_proj = light->cam->viewprojection_matrix;
+				shader->setUniform("u_shadow_viewproj", shadow_proj);
+			}
+
+			//do the draw call
+			mesh->render(GL_TRIANGLES);
+		}
 		//disable shader
 		shader->disable();
+
+		glDisable(GL_BLEND);
+		glDepthFunc(GL_LESS); //as default
 
 		for (int i = 0; i < children.size(); i++)
 			children[i]->render(camera);  //repeat for every child	
@@ -233,22 +359,29 @@ void EntityMesh::update(float dt)
 		Vector3 coll;
 		Vector3 collnorm;
 
-		if (current->name == "PUERTA_BAR")
+		if (current->name == "PUERTA_BAR" || current->name == "CASA"  || current->name == "CASA_INTERIOR" || current->name == "PUERTA_BAR_INTERIOR" || current->name == "PUERTA" || current->name == "ZEN" )
 		{
-			if (current->mesh->testRayCollision(*current->model,     //the model of the entity to know where it is
-				characterTargetCenter,        //the origin of the ray we want to test
-				model->frontVector(),        //the dir vector of the ray
-				coll,        //here we will h
-				collnorm,        //a temp var to store the collision normal
-				5,    //max ray distance to test
-				false            //false if we want the col_point in world space (true if in object)
-			) == true)
+			if (current->mesh->testRayCollision(*current->model, characterTargetCenter, model->frontVector(), coll, collnorm, 3, false ) == true)
 			{
 				object = true;
 				if (Input::wasKeyPressed(SDL_SCANCODE_F))
 				{
-					change_stage = true;
-					Game::instance->camera_mode = false;
+					if(current->name == "PUERTA_BAR")
+						Game::instance->scene = Scene::Get("data/bar.txt");
+					if (current->name == "CASA")
+						Game::instance->scene = Scene::Get("data/casa.txt");
+					if (current->name == "PUERTA")
+						Game::instance->scene = Scene::Get("data/combate.txt");
+					if (current->name == "ZEN")
+						Game::instance->scene = Scene::Get("data/final.txt");
+					
+					Vector3 orig_pos = Game::instance->scene->player_pos_orig;
+					Vector3 orig_front = Game::instance->scene->player_front_orig;
+					Game::instance->scene->player->model->setTranslation(orig_pos.x, orig_pos.y, orig_pos.z);
+					Game::instance->scene->player->model->setFrontAndOrthonormalize(orig_front);
+
+					if (current->name == "CASA_INTERIOR" || current->name == "PUERTA_BAR_INTERIOR")
+						Game::instance->scene = Scene::Get("data/pueblo.txt");
 				}
 			}
 			else { object = false; }
@@ -263,31 +396,12 @@ void EntityMesh::update(float dt)
 		model->setTranslation(last_pos.x - push_away.x, 0, last_pos.z - push_away.z);
 		model->setFrontAndOrthonormalize(front);
 	}
-
-	if (change_stage)
-		Game::instance->scene = new Scene("data/bar.txt");
 }
 
 EntityLight::EntityLight(std::string name)
 {
 	this->name = name;
-	model->translate(100, 100, 100);
-
 	entity_type = LIGHT;
 
-	Vector3 target = Vector3(0,0,60);
-	Vector3 pos = model->getTranslation();
-	model->setFrontAndOrthonormalize(target - pos);
-
 	cam = new Camera();
-	cam->lookAt(model->getTranslation(), *model * Vector3(0, 0, 1), model->rotateVector(Vector3(0, 1, 0)));
-	cam->setOrthographic(-50, 50, -50, 50, 0.1, 500);
-
-	light_type = DIRECTIONAL;
-
-	shadow_fbo = new FBO();
-	shadow_fbo->setDepthOnly(8192, 8192);
-
-	intensity = 1.0;
-	color = Vector3(1, 1, 1);
 }

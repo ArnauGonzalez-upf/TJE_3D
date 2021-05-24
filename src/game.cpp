@@ -39,29 +39,25 @@ Game::Game(int window_width, int window_height, SDL_Window* window)
 	glEnable( GL_DEPTH_TEST ); //check the occlusions using the Z buffer
 
 	//create our camera
-	camera = new Camera();
-	camera->lookAt(Vector3(0.f,100.f, 100.f),Vector3(0.f,0.f,0.f), Vector3(0.f,1.f,0.f)); //position the camera and point to 0,0,0
-	camera->setPerspective(70.f,window_width/(float)window_height,0.1f,10000.f); //set the projection, we want to be perspective
+	//camera = new Camera();
+	//camera->lookAt(Vector3(0.f,100.f, 100.f),Vector3(0.f,0.f,0.f), Vector3(0.f,1.f,0.f)); //position the camera and point to 0,0,0
+	//camera->setPerspective(70.f,window_width/(float)window_height,0.1f,10000.f); //set the projection, we want to be perspective
 
 	//hide the cursor
 	SDL_ShowCursor(!mouse_locked); //hide or show the mouse
 
-	scene = new Scene("data/pueblo.txt");
+	scene = Scene::Get("data/pueblo.txt");
 
-	//fbo_shadow = new FBO();
-	//fbo_shadow->setDepthOnly(2048, 2048);
-
-	cosa = false;
-
+	cosa = true;
 	new EditorStage();
 
-	edit_mode = true;
+	edit_mode = false;
 	combat_mode = false;
 
 	comb_m = DEFENSE;
 	combat_counter = 4;
 	attack_change = true;
-	camera_mode = true;
+	//camera_mode = FOLLOWING;
 }
 
 //what to do when the image has to be draw
@@ -73,11 +69,14 @@ void Game::render(void)
 	// Clear the window and the depth buffer
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+	camera = scene->scene_camera;
+	camera_mode = scene->camera_mode;
+
 	//set the camera as default
 	camera->enable();
 
-	//cosa = false;
-	if (!edit_mode)
+	//Salir del paso
+	/*if (!edit_mode)
 	{
 		if (!combat_mode) {
 			if (camera_mode) {
@@ -97,7 +96,7 @@ void Game::render(void)
 				}
 			}
 			else {
-				Vector3 eye = Vector3(15.0f, 5.0f, 0.0f);
+				Vector3 eye = Vector3(16.0f, 3.0f, 0.0f);
 				Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
 				camera->lookAt(eye, center, camera->up);
 			}
@@ -110,18 +109,62 @@ void Game::render(void)
 		}
 	}
 
+	//Cliff
+	//Vector3 eye = *(scene->player->model) * Vector3(-5.0f, 1.0f, 0.0f);
+	//Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+	//camera->lookAt(eye, center, camera->up);
+
+	//Casa
+	//camera->lookAt(Vector3(0.0f, 15.0f, -1.0f), Vector3(0,0,-1.01f), camera->up);*/
+
+	if (camera_mode == FOLLOWING)
+	{
+		if (cosa)
+		{
+			Vector3 eye = *(scene->player->model) * Vector3(0.0f, 3.0f, -3.0f);
+			Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, -0.1f);
+			Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+			camera->lookAt(eye, center, up);
+		}
+		else
+		{
+			Vector3 eye = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+			Vector3 center = *(scene->player->model) * Vector3(0.0f, 1.99f, 0.1f);
+			Vector3 up = scene->player->model->rotateVector(Vector3(0.0f, 1.0f, 0.0f));
+			camera->lookAt(eye, center, up);
+		}
+	}
+	else if (camera_mode == CENTERED)
+	{
+		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+		camera->lookAt(camera->eye, center, camera->up);
+	}
+	else if (camera_mode == FOLLOWING_LATERAL)
+	{
+		Vector3 eye = *(scene->player->model) * Vector3(-5.0f, 1.0f, 0.0f);
+		Vector3 center = *(scene->player->model) * Vector3(0.0f, 2.0f, 0.0f);
+		camera->lookAt(eye, center, camera->up);
+	}
+
 	//set flags
 	glDisable(GL_BLEND);
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
 
-	glDisable(GL_DEPTH_TEST);
+	//glDisable(GL_DEPTH_TEST);
 	//scene->drawSky(camera);
-	glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_DEPTH_TEST);
 	
-	EntityLight* light = scene->lights[0];
-	shadowMapping(light, camera);
+	//EntityLight* light = scene->lights[0];
+	//shadowMapping(light, camera);
 
+	for (int i = 0; i < scene->lights.size(); ++i)
+	{
+		EntityLight* light = scene->lights[0];
+
+		if (light->light_type == DIRECTIONAL)
+			shadowMapping(light, camera);
+	}
 
 	for (int i = 0; i < scene->entities.size(); ++i)
 	{

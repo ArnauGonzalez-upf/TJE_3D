@@ -1,0 +1,563 @@
+# Blender MTL File: 'None'
+# Material Count: 51
+
+newmtl PolygonSamurai_Mat_01.012
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.013
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.014
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.015
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.016
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.017
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.018
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.019
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.020
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.021
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.022
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.023
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.024
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.025
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.026
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.027
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.028
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.029
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.030
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.031
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.032
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.033
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.034
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.035
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.036
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.037
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.038
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.039
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.040
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.041
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.042
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.043
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.044
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.045
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.046
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.047
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.048
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.049
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.050
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.051
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.052
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.053
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.054
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.055
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.056
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.057
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.058
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.059
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.060
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.061
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png
+
+newmtl PolygonSamurai_Mat_01.062
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\SamuraiPack\\PolygonSamurai_Tex_01.png

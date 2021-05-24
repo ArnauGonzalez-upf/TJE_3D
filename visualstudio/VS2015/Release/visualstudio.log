@@ -1,26 +1,27 @@
 ﻿  game.cpp
 D:\Arnau\Documents\TJE_3D\src\framework.h(372,105): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(126,20): warning C4018: '<': no coinciden signed/unsigned
-D:\Arnau\Documents\TJE_3D\src\game.cpp(158,20): warning C4018: '<': no coinciden signed/unsigned
-D:\Arnau\Documents\TJE_3D\src\game.cpp(207,15): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(227,84): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(228,87): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(229,75): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(230,75): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(232,87): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(233,88): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(286,21): warning C4018: '<': no coinciden signed/unsigned
-D:\Arnau\Documents\TJE_3D\src\game.cpp(295,19): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(340,40): warning C4244: '*=': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(355,104): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(355,90): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(355,86): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Arnau\Documents\TJE_3D\src\game.cpp(355,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(161,20): warning C4018: '<': no coinciden signed/unsigned
+D:\Arnau\Documents\TJE_3D\src\game.cpp(169,20): warning C4018: '<': no coinciden signed/unsigned
+D:\Arnau\Documents\TJE_3D\src\game.cpp(201,20): warning C4018: '<': no coinciden signed/unsigned
+D:\Arnau\Documents\TJE_3D\src\game.cpp(250,15): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(270,84): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(271,87): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(272,75): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(273,75): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(275,87): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(276,88): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(329,21): warning C4018: '<': no coinciden signed/unsigned
+D:\Arnau\Documents\TJE_3D\src\game.cpp(338,19): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(383,40): warning C4244: '*=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(398,104): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(398,90): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(398,86): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Arnau\Documents\TJE_3D\src\game.cpp(398,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 LINK : warning LNK4098: la biblioteca predeterminada'LIBCMT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
   Generando código
-  5 of 2162 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  2 of 2255 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    11 functions had inline decision re-evaluated but remain unchanged
+    13 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
 glew32s.lib(glew.obj) : warning LNK4099: no se encontró PDB 'vc120.pdb' con 'glew32s.lib(glew.obj)' o en 'D:\Arnau\Documents\TJE_3D\vc120.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
   visualstudio.vcxproj -> D:\Arnau\Documents\TJE_3D\game.exe

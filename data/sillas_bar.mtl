@@ -1,5 +1,5 @@
 # Blender MTL File: 'None'
-# Material Count: 20
+# Material Count: 25
 
 newmtl LOW-POLY-COLORS
 Ns 0.000000
@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.001
 Ns 0.000000
@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.002
 Ns 0.000000
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.003
 Ns 0.000000
@@ -43,7 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.004
 Ns 0.000000
@@ -54,7 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.005
 Ns 0.000000
@@ -65,7 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.006
 Ns 0.000000
@@ -76,7 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.007
 Ns 0.000000
@@ -87,7 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.008
 Ns 0.000000
@@ -98,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.009
 Ns 0.000000
@@ -109,7 +109,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.010
 Ns 0.000000
@@ -120,7 +120,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.011
 Ns 0.000000
@@ -131,7 +131,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.012
 Ns 0.000000
@@ -142,7 +142,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.013
 Ns 0.000000
@@ -153,7 +153,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.014
 Ns 0.000000
@@ -164,7 +164,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.015
 Ns 0.000000
@@ -175,7 +175,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.016
 Ns 0.000000
@@ -186,7 +186,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.017
 Ns 0.000000
@@ -197,7 +197,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.018
 Ns 0.000000
@@ -208,7 +208,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
 
 newmtl LOW-POLY-COLORS.019
 Ns 0.000000
@@ -219,4 +219,59 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd C:\\Textures\\color-atlas-new.png
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.020
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.021
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.022
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.023
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
+
+newmtl LOW-POLY-COLORS.024
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.600000 0.600000 0.600000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd biglib\\GiantGeneralPack\\color-atlas-new.png
